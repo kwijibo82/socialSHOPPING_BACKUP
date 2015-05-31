@@ -17,9 +17,12 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 		// Include Bootstrap stylesheet 
-		document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
+		//document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
 		// Include AdminFlare stylesheet 
-		document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
+		//document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
+
+        document.write('<link href="css/1.3.0/cyan/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
+        document.write('<link href="css/1.3.0/cyan/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
 	</script>
 	
 	<script src="javascripts/1.3.0/modernizr-jquery.min.js" type="text/javascript"></script>
@@ -112,28 +115,28 @@
 	<nav id="left-panel">
 		<div id="left-panel-content">
 			<ul>
-				<li>
-					<a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
-				</li>
-				<li>
-					<a href="layout.html"><span class="icon-th-large"></span>Layout</a>
-				</li>
-				<li class="active">
-					<a href="typography.html"><span class="icon-font"></span>Typography</a>
-				</li>
-				<li>
-					<a href="forms.html"><span class="icon-edit"></span>Forms</a>
-				</li>
-				<li>
-					<a href="tables.html"><span class="icon-table"></span>Tables</a>
-				</li>
-				
-				<li>
-					<a href="components.html"><span class="icon-inbox"></span>Components</a>
-				</li>
-				<li>
-					<a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
-				</li>
+                <li class="active"> <!--TODO: Customizar iconos -->
+                    <a href="misVentas.php"><span class="icon-dashboard"></span>Mis articulos</a>
+                </li>
+                <li>
+                    <a href="misEscaparates.php"><span class="icon-th-large"></span>Mis escaparates</a>
+                </li>
+                <li>
+                    <a href="misCompradores.php"><span class="icon-font"></span>Mis compradores</a>
+                </li>
+                <li>
+                    <a href="actividadComercial.php"><span class="icon-edit"></span>Mi actividad comercial</a>
+                </li>
+                <li>
+
+                <!-- </li>
+
+                <li>
+                    <a href="components.html"><span class="icon-inbox"></span>Components</a>
+                </li>
+                <li>
+                    <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
+                </li>
 				<li class="lp-dropdown">
 					<a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
 					<ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
@@ -186,7 +189,7 @@
 			</ul>
 		</div>
 		<div class="icon-caret-down"></div>
-		<div class="icon-caret-up"></div>
+		<div class="icon-caret-up"></div> -->
 	</nav>
 	<!-- / Left navigation panel -->
 	

@@ -1,3 +1,22 @@
+<?php
+
+session_start();
+
+echo "El Login es: ". $_SESSION['LOGIN'];
+
+
+if (!(isset($_SESSION['LOGIN']) && $_SESSION['LOGIN'] != '')) {
+
+    header("Location: http://localhost/socialshopping-PHP/registroUsuariosForm.html");
+
+}
+
+//TODO: comprobar esto!!!
+//session_destroy();
+//session_unset();
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -266,80 +285,80 @@
 		<div id="left-panel-content">
 			<ul>
 				<li class="active"> <!--TODO: Customizar iconos -->
-					<a href="dashboard.html"><span class="icon-dashboard"></span>Mis ventas</a>
+					<a href="misVentas.php"><span class="icon-dashboard"></span>Mis articulos</a>
 				</li>
 				<li>
-					<a href="layout.html"><span class="icon-th-large"></span>Layout</a>
+					<a href="misEscaparates.php"><span class="icon-th-large"></span>Mis escaparates</a>
 				</li>
 				<li>
-					<a href="typography.html"><span class="icon-font"></span>Typography</a>
+					<a href="misCompradores.php"><span class="icon-font"></span>Mis compradores</a>
 				</li>
 				<li>
-					<a href="forms.html"><span class="icon-edit"></span>Forms</a>
+					<a href="actividadComercial.php"><span class="icon-edit"></span>Mi actividad comercial</a>
 				</li>
 				<li>
-					<a href="tables.html"><span class="icon-table"></span>Tables</a>
+					<a href="dashboard.php"><span class="icon-table"></span>Resumen actividad</a>
 				</li>
-				
-				<li>
-					<a href="components.html"><span class="icon-inbox"></span>Components</a>
-				</li>
-				<li>
-					<a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
-				</li>
-				<li class="lp-dropdown">
-					<a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
-					<ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
-						<li>
-							<a tabindex="-1" href="extras-icons.html"><span class="icon-coffee"></span>Icons</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="extras-charts.html"><span class="icon-bar-chart"></span>Charts</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="extras-widgets.html"><span class="icon-star"></span>Widgets</a>
-						</li>
-					</ul>
-				</li>
-				<li class="lp-dropdown">
-					<a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
-					<ul class="lp-dropdown-menu simple" data-dropdown-owner="pages-dropdown">
-						<li>
-							<a tabindex="-1" href="index.html"><i class="icon-signin"></i>&nbsp;&nbsp;Sign In</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-signup.html"><i class="icon-check"></i>&nbsp;&nbsp;Sign Up</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-messages.html"><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Messages</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-stream.html"><i class="icon-leaf"></i>&nbsp;&nbsp;Stream</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-pricing.html"><i class="icon-money"></i>&nbsp;&nbsp;Pricing</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-invoice.html"><i class="icon-pencil"></i>&nbsp;&nbsp;Invoice</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-map.html"><i class="icon-map-marker"></i>&nbsp;&nbsp;Full page map</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-error-404.html"><i class="icon-unlink"></i>&nbsp;&nbsp;Error 404</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-error-500.html"><i class="icon-bug"></i>&nbsp;&nbsp;Error 500</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-blank.html"><i class="icon-bookmark-empty"></i>&nbsp;&nbsp;Blank page</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="icon-caret-down"></div>
-		<div class="icon-caret-up"></div>
+
+                <!--<li>
+                    <a href="components.html"><span class="icon-inbox"></span>Components</a>
+                </li>
+                <li>
+                    <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
+                </li>
+                <li class="lp-dropdown">
+                    <a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
+                    <ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
+                        <li>
+                            <a tabindex="-1" href="extras-icons.html"><span class="icon-coffee"></span>Icons</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="extras-charts.html"><span class="icon-bar-chart"></span>Charts</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="extras-widgets.html"><span class="icon-star"></span>Widgets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lp-dropdown">
+                    <a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
+                    <ul class="lp-dropdown-menu simple" data-dropdown-owner="pages-dropdown">
+                        <li>
+                            <a tabindex="-1" href="index.html"><i class="icon-signin"></i>&nbsp;&nbsp;Sign In</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-signup.html"><i class="icon-check"></i>&nbsp;&nbsp;Sign Up</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-messages.html"><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Messages</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-stream.html"><i class="icon-leaf"></i>&nbsp;&nbsp;Stream</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-pricing.html"><i class="icon-money"></i>&nbsp;&nbsp;Pricing</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-invoice.html"><i class="icon-pencil"></i>&nbsp;&nbsp;Invoice</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-map.html"><i class="icon-map-marker"></i>&nbsp;&nbsp;Full page map</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-error-404.html"><i class="icon-unlink"></i>&nbsp;&nbsp;Error 404</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-error-500.html"><i class="icon-bug"></i>&nbsp;&nbsp;Error 500</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-blank.html"><i class="icon-bookmark-empty"></i>&nbsp;&nbsp;Blank page</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="icon-caret-down"></div>
+        <div class="icon-caret-up"></div>-->
 	</nav>
 	<!-- / Left navigation panel -->
 	

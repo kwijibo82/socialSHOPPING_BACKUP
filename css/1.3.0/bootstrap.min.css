@@ -2265,11 +2265,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .icon-th-large:before {
-    content: "\f009"
+    /*content: "\f009"*/
 }
 
 .icon-th:before {
-    content: "\f00a"
+    /*content: "\f00a"*/
 }
 
 .icon-th-list:before {
@@ -3037,7 +3037,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .icon-dashboard:before {
-    content: url('\sampleIcon.png');
+    /*content: url('\sampleIcon.png');*/
     /*content: "\f0e4"*/
 }
 

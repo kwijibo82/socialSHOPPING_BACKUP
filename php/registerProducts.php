@@ -51,13 +51,13 @@ echo "DEBUG".$result."END_DEBUG";
 //controla que se haya insertado correctamente el registro
 if (strpos($result, '"ID_PRODUCTO":')  !== false)
 {
-    header("Location: http://localhost/socialshopping-PHP/layout.html#exito");
+    header("Location: http://localhost/socialshopping-PHP/misEscaparates.php#exito");
     die();
 }
 else{
    // $_POST['insertOK'] = false;
 }
-    header("Location: http://localhost/socialshopping-PHP/layout.html#fracaso");
+    header("Location: http://localhost/socialshopping-PHP/misEscaparates.php#fracaso");
     die();
 
 curl_close($ch);  //cerramos

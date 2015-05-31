@@ -267,28 +267,28 @@
 	<nav id="left-panel">
 		<div id="left-panel-content">
 			<ul>
-				<li>
-					<a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
-				</li>
-				<li class="active">
-					<a href="layout.html"><span class="icon-th-large"></span>Layout</a>
-				</li>
-				<li>
-					<a href="typography.html"><span class="icon-font"></span>Typography</a>
-				</li>
-				<li>
-					<a href="forms.html"><span class="icon-edit"></span>Forms</a>
-				</li>
-				<li>
-					<a href="tables.html"><span class="icon-table"></span>Tables</a>
-				</li>
-				
-				<li>
-					<a href="components.html"><span class="icon-inbox"></span>Components</a>
-				</li>
-				<li>
-					<a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
-				</li>
+                <li class="active"> <!--TODO: Customizar iconos -->
+                    <a href="misVentas.php"><span class="icon-dashboard"></span>Mis articulos</a>
+                </li>
+                <li>
+                    <a href="misEscaparates.php"><span class="icon-th-large"></span>Mis escaparates</a>
+                </li>
+                <li>
+                    <a href="misCompradores.php"><span class="icon-font"></span>Mis compradores</a>
+                </li>
+                <li>
+                    <a href="actividadComercial.php"><span class="icon-edit"></span>Mi actividad comercial</a>
+                </li>
+                <li>
+                    <a href="dashboard.php"><span class="icon-table"></span>Resumen actividad</a>
+                </li>
+
+              <!--  <li>
+                    <a href="components.html"><span class="icon-inbox"></span>Components</a>
+                </li>
+                <li>
+                    <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
+                </li>
 				<li class="lp-dropdown">
 					<a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
 					<ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
@@ -342,7 +342,7 @@
 		</div>
 		<div class="icon-caret-down"></div>
 		<div class="icon-caret-up"></div>
-	</nav>
+	</nav> -->
 	<!-- / Left navigation panel -->
 	
 	<!-- Page content
@@ -378,16 +378,11 @@
         <input type="radio"> 6 mes (? Euros)<br>
         <input type="radio"> 1 año (? Euros)<br>
 
-
         <br><br>
         <input type="submit" value="Limpiar campos">
         <input type="submit" value="Introducir">
 
-
-
     </form>
-
-
 
    <div id="exito" class="modalDialog">
         <div>

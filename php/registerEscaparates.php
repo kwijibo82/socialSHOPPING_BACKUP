@@ -34,7 +34,7 @@
         echo "DEBUG".$result."END_DEBUG";
 
        // Location();
-        //header("Location: dashboard.html");
+        //header("Location: misVentas.php");
        // die();
 
     }

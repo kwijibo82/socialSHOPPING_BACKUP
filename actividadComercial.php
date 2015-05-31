@@ -17,10 +17,13 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 		// Include Bootstrap stylesheet 
-		document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
+		//document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
 		// Include AdminFlare stylesheet 
-		document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
-	</script>
+		//document.write('<link href="css/' + DEMO_ADMINFLARE_VERSION + '/' + DEMO_CURRENT_THEME + '/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
+        document.write('<link href="css/1.3.0/cyan/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" id="bootstrap-css">');
+        document.write('<link href="css/1.3.0/cyan/adminflare.min.css" media="all" rel="stylesheet" type="text/css" id="adminflare-css">');
+
+    </script>
 	
 	<script src="javascripts/1.3.0/modernizr-jquery.min.js" type="text/javascript"></script>
 	<script src="javascripts/1.3.0/adminflare-demo.min.js" type="text/javascript"></script>
@@ -114,77 +117,77 @@
 	<nav id="left-panel">
 		<div id="left-panel-content">
 			<ul>
-				<li>
-					<a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
-				</li>
-				<li>
-					<a href="layout.html"><span class="icon-th-large"></span>Layout</a>
-				</li>
-				<li>
-					<a href="typography.html"><span class="icon-font"></span>Typography</a>
-				</li>
-				<li class="active">
-					<a href="forms.html"><span class="icon-edit"></span>Forms</a>
-				</li>
-				<li>
-					<a href="tables.html"><span class="icon-table"></span>Tables</a>
-				</li>
-				
-				<li>
-					<a href="components.html"><span class="icon-inbox"></span>Components</a>
-				</li>
-				<li>
-					<a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
-				</li>
-				<li class="lp-dropdown">
-					<a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
-					<ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
-						<li>
-							<a tabindex="-1" href="extras-icons.html"><span class="icon-coffee"></span>Icons</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="extras-charts.html"><span class="icon-bar-chart"></span>Charts</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="extras-widgets.html"><span class="icon-star"></span>Widgets</a>
-						</li>
-					</ul>
-				</li>
-				<li class="lp-dropdown">
-					<a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
-					<ul class="lp-dropdown-menu simple" data-dropdown-owner="pages-dropdown">
-						<li>
-							<a tabindex="-1" href="index.html"><i class="icon-signin"></i>&nbsp;&nbsp;Sign In</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-signup.html"><i class="icon-check"></i>&nbsp;&nbsp;Sign Up</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-messages.html"><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Messages</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-stream.html"><i class="icon-leaf"></i>&nbsp;&nbsp;Stream</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-pricing.html"><i class="icon-money"></i>&nbsp;&nbsp;Pricing</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-invoice.html"><i class="icon-pencil"></i>&nbsp;&nbsp;Invoice</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-map.html"><i class="icon-map-marker"></i>&nbsp;&nbsp;Full page map</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-error-404.html"><i class="icon-unlink"></i>&nbsp;&nbsp;Error 404</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-error-500.html"><i class="icon-bug"></i>&nbsp;&nbsp;Error 500</a>
-						</li>
-						<li>
-							<a tabindex="-1" href="pages-blank.html"><i class="icon-bookmark-empty"></i>&nbsp;&nbsp;Blank page</a>
-						</li>
-					</ul>
-				</li>
+                <li class="active"> <!--TODO: Customizar iconos -->
+                    <a href="misVentas.php"><!--span class="icon-dashboard">--></span>Mis articulos</a>
+                </li>
+                <li>
+                    <a href="misEscaparates.php"><!--span class="icon-th-large">--></span>Mis escaparates</a>
+                </li>
+                <li>
+                    <a href="misCompradores.php"><!--span class="icon-font"></span>-->Mis compradores</a>
+                </li>
+                <li>
+                    <a href="actividadComercial.php"><!--span class="icon-edit"></span>-->Mi actividad comercial</a>
+                </li>
+               <li>
+                    <a href="dashboard.php"><!--span class="icon-table"></span>-->Resumen actividad</a>
+                </li>
+
+                <!-- <li>
+                     <a href="components.html"><span class="icon-inbox"></span>Components</a>
+                 </li>
+                 <li>
+                     <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
+                 </li>
+                 <li class="lp-dropdown">
+                     <a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
+                     <ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
+                         <li>
+                             <a tabindex="-1" href="extras-icons.html"><span class="icon-coffee"></span>Icons</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="extras-charts.html"><span class="icon-bar-chart"></span>Charts</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="extras-widgets.html"><span class="icon-star"></span>Widgets</a>
+                         </li>
+                     </ul>
+                 </li>
+                 <li class="lp-dropdown">
+                     <a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
+                     <ul class="lp-dropdown-menu simple" data-dropdown-owner="pages-dropdown">
+                         <li>
+                             <a tabindex="-1" href="index.html"><i class="icon-signin"></i>&nbsp;&nbsp;Sign In</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-signup.html"><i class="icon-check"></i>&nbsp;&nbsp;Sign Up</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-messages.html"><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Messages</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-stream.html"><i class="icon-leaf"></i>&nbsp;&nbsp;Stream</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-pricing.html"><i class="icon-money"></i>&nbsp;&nbsp;Pricing</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-invoice.html"><i class="icon-pencil"></i>&nbsp;&nbsp;Invoice</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-map.html"><i class="icon-map-marker"></i>&nbsp;&nbsp;Full page map</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-error-404.html"><i class="icon-unlink"></i>&nbsp;&nbsp;Error 404</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-error-500.html"><i class="icon-bug"></i>&nbsp;&nbsp;Error 500</a>
+                         </li>
+                         <li>
+                             <a tabindex="-1" href="pages-blank.html"><i class="icon-bookmark-empty"></i>&nbsp;&nbsp;Blank page</a>
+                         </li>
+                     </ul>
+                 </li>-->
 			</ul>
 		</div>
 		<div class="icon-caret-down"></div>
